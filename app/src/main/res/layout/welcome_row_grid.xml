@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+
+    <TextView
+        android:background="@drawable/gradient_for_grid"
+        android:id="@+id/item_text"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="18dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="35dp" >
+    </TextView>
+
+</LinearLayout>
