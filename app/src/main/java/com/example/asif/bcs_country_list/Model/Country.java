@@ -1,22 +1,24 @@
-package com.example.asif.bcs_country_list;
+package com.example.asif.bcs_country_list.Model;
+
+import android.util.Log;
 
 import java.io.Serializable;
 
 /**
  * Created by asif on 5/4/16.
  */
-public class ModelCountry implements Serializable{
+public class Country implements Serializable{
     String name;
     String capital;
     String region;
     long population;
     String[] latLong;
-    String currencies;
-    String callingCodes;
+    String[] currencies;
+    String[] callingCodes;
     String[] border;
     String[] languages;
 
-    public ModelCountry() {
+    public Country() {
 
     }
 
@@ -60,19 +62,19 @@ public class ModelCountry implements Serializable{
         this.latLong = latLong;
     }
 
-    public String getCurrencies() {
+    public String[] getCurrencies() {
         return currencies;
     }
 
-    public void setCurrencies(String currencies) {
+    public void setCurrencies(String[] currencies) {
         this.currencies = currencies;
     }
 
-    public String getCallingCodes() {
+    public String[] getCallingCodes() {
         return callingCodes;
     }
 
-    public void setCallingCodes(String callingCodes) {
+    public void setCallingCodes(String[] callingCodes) {
         this.callingCodes = callingCodes;
     }
 

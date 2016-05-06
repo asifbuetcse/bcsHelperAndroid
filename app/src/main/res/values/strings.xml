@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">BCS Country List</string>
+    <string name="title_activity_generic">GenericActivity</string>
+    <string name="urlToExecute">https://restcountries.eu/rest/v1/all</string>
 </resources>

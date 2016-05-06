@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dip"
+    android:orientation="vertical"
+    android:background="#00695C">
+
+    <TextView
+        android:id="@+id/lblListItemForCapital"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="21dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="#00695C"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+        android:textColor="#ffffff"/>
+    <TextView
+        android:id="@+id/lblListItemForCurrency"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="21dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="#00897B"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+        android:textColor="#fefefa"/>
+    <TextView
+        android:id="@+id/lblListItemForPopulation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="21dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="#00695C"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+        android:textColor="#ffffff"/>
+    <TextView
+        android:id="@+id/lblListItemForLanguage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="21dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="#00897B"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+        android:textColor="#fefefa"/>
+
+</LinearLayout>

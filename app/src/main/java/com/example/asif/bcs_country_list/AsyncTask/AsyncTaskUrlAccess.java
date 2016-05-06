@@ -1,7 +1,8 @@
-package com.example.asif.bcs_country_list;
+package com.example.asif.bcs_country_list.AsyncTask;
 
 import android.os.AsyncTask;
-import android.util.Log;
+
+import com.example.asif.bcs_country_list.Interface.AsyncResponse;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -13,7 +14,7 @@ import java.net.URL;
  */
 public class AsyncTaskUrlAccess extends AsyncTask<String, Integer, String> {
 
-    public InterfaceAsyncResponse delegate = null;
+    public AsyncResponse delegate = null;
     @Override
     protected String doInBackground(String... params) {
         String urlString = params[0];
@@ -44,7 +45,6 @@ public class AsyncTaskUrlAccess extends AsyncTask<String, Integer, String> {
 
     @Override
     protected void onPostExecute(String result) {
-        Log.e("post execute", "post ex " + result);
         delegate.processFinish(result);
     }
 

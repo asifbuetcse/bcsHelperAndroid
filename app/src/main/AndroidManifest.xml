@@ -10,22 +10,18 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Welcome">
+        <activity android:name=".Activities.Welcome">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Countries" />
-        <activity android:name=".Capitals" />
-        <activity android:name=".Currencies" />
-        <activity android:name=".CallingCodes" />
-        <activity android:name=".Population" />
-        <activity android:name=".Lat_long" />
-        <activity android:name=".Borders" />
-        <activity android:name=".Languages" />
-        <activity android:name=".Quiz"></activity>
+        <activity android:name=".Activities.Countries" />
+        <activity
+            android:name=".Activities.GenericActivity"
+            android:label="@string/title_activity_generic"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package com.example.asif.bcs_country_list;
+package com.example.asif.bcs_country_list.Adapter;
 import java.util.ArrayList;
 import android.app.Activity;
 import android.content.Context;
@@ -8,6 +8,9 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import com.example.asif.bcs_country_list.Model.AdapterWelcome;
+import com.example.asif.bcs_country_list.R;
+
 /**
  * Created by asif on 5/3/16.
  */
@@ -15,13 +18,13 @@ import android.widget.TextView;
 
 
 
-public class AdapterWelcomeCustomGridView extends ArrayAdapter<ModelAdapterWelcome> {
+public class WelcomeCustomGridView extends ArrayAdapter<AdapterWelcome> {
     Context context;
     int layoutResourceId;
-    ArrayList<ModelAdapterWelcome> data = new ArrayList<ModelAdapterWelcome>();
+    ArrayList<AdapterWelcome> data = new ArrayList<AdapterWelcome>();
 
-    public AdapterWelcomeCustomGridView(Context context, int layoutResourceId,
-                                        ArrayList<ModelAdapterWelcome> data) {
+    public WelcomeCustomGridView(Context context, int layoutResourceId,
+                                 ArrayList<AdapterWelcome> data) {
         super(context, layoutResourceId, data);
         this.layoutResourceId = layoutResourceId;
         this.context = context;
@@ -43,7 +46,7 @@ public class AdapterWelcomeCustomGridView extends ArrayAdapter<ModelAdapterWelco
             holder = (RecordHolder) row.getTag();
         }
 
-        ModelAdapterWelcome item = data.get(position);
+        AdapterWelcome item = data.get(position);
         holder.txtTitle.setText(item.getName());
         return row;
 

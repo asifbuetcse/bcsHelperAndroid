@@ -1,12 +1,12 @@
-package com.example.asif.bcs_country_list;
+package com.example.asif.bcs_country_list.Model;
 
 /**
  * Created by asif on 5/3/16.
  */
-public class ModelAdapterWelcome {
+public class AdapterWelcome {
     private String name;
 
-    public ModelAdapterWelcome(String name) {
+    public AdapterWelcome(String name) {
         this.name = name;
     }
 
