@@ -44,7 +44,6 @@ public class AsyncTaskUrlAccess extends AsyncTask<String, Integer, String> {
 
     @Override
     protected void onPostExecute(String result) {
-        Log.e("post execute", "post ex " + result);
         delegate.processFinish(result);
     }
 

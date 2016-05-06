@@ -39,7 +39,6 @@ public class Welcome extends AppCompatActivity implements InterfaceAsyncResponse
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 selectActivity(position);
-
                 Bundle bundle = new Bundle();
                 bundle.putSerializable("result", countryCollection);
                 myIntent.putExtras(bundle);
@@ -58,11 +57,12 @@ public class Welcome extends AppCompatActivity implements InterfaceAsyncResponse
                 JSONObject object = new JSONObject(jsonArray.getString(i));
                 modelCountry = new ModelCountry();
                 modelCountry.setName(object.getString("name"));
+                modelCountry.setCapital(object.getString("capital"));
                 countryCollection.add(modelCountry);
             }
         }
         catch (Exception e) {
-            Toast.makeText(this, "error", Toast.LENGTH_SHORT).show();
+
         }
 
     }
